@@ -2,9 +2,9 @@ import React from "react";
 
 const HomeScreen = () => {
   return (
-    <div>
-      Home Screen
-      <button className="btn w-64 rounded-full">Button</button>
+    <div className="btn-group">
+      <button className="btn btn-active">Location</button>
+      <button className="btn">Date</button>
     </div>
   );
 };
