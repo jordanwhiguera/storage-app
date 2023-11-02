@@ -1,4 +1,10 @@
 import HomeScreen from "./screens/Home/page";
-export default function Home() {
-  return <HomeScreen />;
+import Post from "./components/Post/page";
+export default function Base() {
+  return (
+    <>
+      {/* <HomeScreen /> */}
+      <Post />
+    </>
+  );
 }
