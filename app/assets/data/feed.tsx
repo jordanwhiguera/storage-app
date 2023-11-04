@@ -1,4 +1,23 @@
-export default [
+export interface Coordinate {
+  latitude: number;
+  longitude: number;
+}
+
+export interface FeedItem {
+  id: string;
+  image: string;
+  type: string;
+  title: string;
+  distance: number;
+  price: number;
+  carType: string; // Change to number if necessary
+  deliveryPrice: number;
+  stars: number;
+  numReviews: number;
+  coordinate: Coordinate;
+}
+
+const feedData: FeedItem[] = [
   {
     id: "0",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
@@ -7,7 +26,7 @@ export default [
       "Bright room in the heart of the city Bright room in the heart of the city Bright room in the heart of the city",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -23,7 +42,7 @@ export default [
     title: "NEW lux. apartment in the center of Santa Cruz",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -39,7 +58,7 @@ export default [
     title: "Green House Santa Cruz",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -55,7 +74,7 @@ export default [
     title: "Typical canarian house",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -72,7 +91,7 @@ export default [
       "Bright room in the heart of the city Bright room in the heart of the city Bright room in the heart of the city",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -88,7 +107,7 @@ export default [
     title: "NEW lux. apartment in the center of Santa Cruz",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -104,7 +123,7 @@ export default [
     title: "Green House Santa Cruz",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -120,7 +139,7 @@ export default [
     title: "Typical canarian house",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -137,7 +156,7 @@ export default [
       "Bright room in the heart of the city Bright room in the heart of the city Bright room in the heart of the city",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -153,7 +172,7 @@ export default [
     title: "NEW lux. apartment in the center of Santa Cruz",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -169,7 +188,7 @@ export default [
     title: "Green House Santa Cruz",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -185,7 +204,7 @@ export default [
     title: "Typical canarian house",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -202,7 +221,7 @@ export default [
       "Bright room in the heart of the city Bright room in the heart of the city Bright room in the heart of the city",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -218,7 +237,7 @@ export default [
     title: "NEW lux. apartment in the center of Santa Cruz",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -234,7 +253,7 @@ export default [
     title: "Green House Santa Cruz",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -250,7 +269,7 @@ export default [
     title: "Typical canarian house",
     distance: 2,
     price: 3,
-    carType: 25,
+    carType: "Courier+",
     deliveryPrice: 20,
     stars: 120,
     numReviews: 13,
@@ -260,3 +279,4 @@ export default [
     },
   },
 ];
+export default feedData;
