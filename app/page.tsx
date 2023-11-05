@@ -11,9 +11,9 @@ export default function Base() {
       {/* <Post /> */}
       {/* <Post /> */}
 
-      {/* <Navbar /> */}
+      <Navbar />
       {/* <SearchResults /> */}
-      <SearchButton />
+      {/* <SearchButton /> */}
     </>
   );
 }
