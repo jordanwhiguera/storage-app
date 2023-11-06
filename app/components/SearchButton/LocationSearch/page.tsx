@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { BsFillXCircleFill } from "react-icons/bs";
 import search from "@/app/assets/data/search";
+import GooglePlacesAutocomplete from "react-google-places-autocomplete";
 
 const LocationSearch = () => {
   const [inputValue, setInputValue] = useState("");
@@ -12,29 +13,22 @@ const LocationSearch = () => {
 
   return (
     <div className="relative w-full">
-      <input
-        type="text"
-        placeholder="Enter your text"
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-        className="w-full px-4 py-2 border-2 border-gray-300 rounded-md rounded-l-full text-white focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+      <GooglePlacesAutocomplete
+        apiKey={process.env.NEXT_PUBLIC_API_KEY}
+        selectProps={{
+          styles: {
+            control: (provided) => ({
+              ...provided,
+              borderTopLeftRadius: "9999px", // 'rounded-tl-full' in Tailwind
+              borderBottomLeftRadius: "9999px", // 'rounded-bl-full' in Tailwind
+              borderTopRightRadius: "0", // Remove rounding from the right side if needed
+              borderBottomRightRadius: "0", // Remove rounding from the right side if needed
+            }),
+            // ... other styles you want to override
+          },
+          // ... other selectProps you want to pass
+        }}
       />
-      {inputValue && (
-        <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
-          <BsFillXCircleFill
-            className="text-gray-500 cursor-pointer"
-            onClick={clearInput}
-          />
-        </div>
-      )}
-      <div className="absolute z-10 w-full bg-white mt-1 rounded-md shadow-lg">
-        {inputValue &&
-          search.map((item) => (
-            <div key={item.id} className="px-4 py-2 border-b hover:bg-gray-100">
-              {item.description}
-            </div>
-          ))}
-      </div>
     </div>
   );
 };
