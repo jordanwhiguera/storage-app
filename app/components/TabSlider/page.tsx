@@ -26,7 +26,7 @@ const TabSlider = () => {
   };
 
   return (
-    <div className="bg-black w-full flex items-center mt-8 p-4 relative">
+    <div className="bg-black w-full flex items-center mt-2 p-4 relative">
       {/* Left scroll icon */}
       <button onClick={scrollLeft} className="mr-2">
         <AiFillLeftCircle size={30} color="white" />

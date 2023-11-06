@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { FaTruckPickup } from "react-icons/fa";
