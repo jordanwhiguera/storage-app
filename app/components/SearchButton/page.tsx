@@ -4,6 +4,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { format } from "date-fns";
 import { FaSearch } from "react-icons/fa";
+import LocationSearch from "./LocationSearch/page";
 
 const SearchButton: React.FC = () => {
   const [startDate, setStartDate] = useState<Date | null>(null);
@@ -51,7 +52,7 @@ const SearchButton: React.FC = () => {
 
   return (
     <div className="relative">
-      <div className="flex items-center border rounded-full overflow-hidden">
+      <div className="flex items-center border rounded-full ">
         {/* Left side - Location input + Date range */}
         <div className="flex-1 flex">
           {" "}
@@ -60,10 +61,7 @@ const SearchButton: React.FC = () => {
           <div className="flex-1">
             {" "}
             {/* This input will take up the available space */}
-            <input
-              className="w-full px-4 py-2 border-none"
-              placeholder="Address, city, or airport"
-            />
+            <LocationSearch />
           </div>
           {/* Divider */}
           <div className="w-px bg-gray-300"></div>

@@ -16,7 +16,7 @@ export default function Base() {
       {/* <Navbar /> */}
       {/* <TabSlider /> */}
       {/* <SearchResults /> */}
-      {/* <SearchButton /> */}
+      <SearchButton />
       <LocationSearch />
     </>
   );
