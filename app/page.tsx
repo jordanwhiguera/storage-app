@@ -5,6 +5,9 @@ import Navbar from "./components/Navbar/page";
 import SearchButton from "./components/SearchButton/page";
 import TabSlider from "./components/TabSlider/page";
 import LocationSearch from "./components/SearchButton/LocationSearch/page";
+import PostScreen from "./screens/PostScreen/page";
+import PostImage from "./screens/PostScreen/PostImage/page";
+
 export default function Base() {
   return (
     <>
@@ -16,8 +19,10 @@ export default function Base() {
       {/* <Navbar /> */}
       {/* <TabSlider /> */}
       {/* <SearchResults /> */}
-      <SearchButton />
-      <LocationSearch />
+      {/* <SearchButton /> */}
+      {/* <LocationSearch /> */}
+      {/* <PostScreen /> */}
+      <PostImage />
     </>
   );
 }
