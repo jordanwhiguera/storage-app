@@ -7,6 +7,7 @@ import TabSlider from "./components/TabSlider/page";
 import LocationSearch from "./components/SearchButton/LocationSearch/page";
 import PostScreen from "./screens/PostScreen/page";
 import PostImage from "./screens/PostScreen/PostImage/page";
+import PostInfo from "./screens/PostScreen/PostInfo/page";
 
 export default function Base() {
   return (
@@ -23,6 +24,7 @@ export default function Base() {
       {/* <LocationSearch /> */}
       {/* <PostScreen /> */}
       <PostImage />
+      {/* <PostInfo /> */}
     </>
   );
 }

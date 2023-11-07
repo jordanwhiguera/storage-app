@@ -23,7 +23,7 @@ const feedData: FeedItem[] = [
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
     type: "20' x 20' Garage",
     title:
-      "Bright room in the heart of the city Bright room in the heart of the city Bright room in the heart of the city",
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
@@ -38,8 +38,9 @@ const feedData: FeedItem[] = [
   {
     id: "1",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg",
-    type: "Entire Flat",
-    title: "NEW lux. apartment in the center of Santa Cruz",
+    type: "20' x 20' Garage",
+    title:
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
@@ -54,8 +55,9 @@ const feedData: FeedItem[] = [
   {
     id: "2",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg",
-    type: "Private Property",
-    title: "Green House Santa Cruz",
+    type: "20' x 20' Garage",
+    title:
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
@@ -70,8 +72,9 @@ const feedData: FeedItem[] = [
   {
     id: "3",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg",
-    type: "Entire Flat",
-    title: "Typical canarian house",
+    type: "20' x 20' Garage",
+    title:
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
@@ -88,7 +91,7 @@ const feedData: FeedItem[] = [
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
     type: "20' x 20' Garage",
     title:
-      "Bright room in the heart of the city Bright room in the heart of the city Bright room in the heart of the city",
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
@@ -103,8 +106,9 @@ const feedData: FeedItem[] = [
   {
     id: "5",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg",
-    type: "Entire Flat",
-    title: "NEW lux. apartment in the center of Santa Cruz",
+    type: "20' x 20' Garage",
+    title:
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
@@ -119,8 +123,9 @@ const feedData: FeedItem[] = [
   {
     id: "6",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg",
-    type: "Private Property",
-    title: "Green House Santa Cruz",
+    type: "20' x 20' Garage",
+    title:
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
@@ -136,7 +141,8 @@ const feedData: FeedItem[] = [
     id: "7",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg",
     type: "Entire Flat",
-    title: "Typical canarian house",
+    title:
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
@@ -153,7 +159,7 @@ const feedData: FeedItem[] = [
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
     type: "20' x 20' Garage",
     title:
-      "Bright room in the heart of the city Bright room in the heart of the city Bright room in the heart of the city",
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
@@ -168,8 +174,9 @@ const feedData: FeedItem[] = [
   {
     id: "9",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg",
-    type: "Entire Flat",
-    title: "NEW lux. apartment in the center of Santa Cruz",
+    type: "20' x 20' Garage",
+    title:
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
@@ -185,7 +192,8 @@ const feedData: FeedItem[] = [
     id: "10",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg",
     type: "Private Property",
-    title: "Green House Santa Cruz",
+    title:
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
@@ -201,7 +209,8 @@ const feedData: FeedItem[] = [
     id: "11",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg",
     type: "Entire Flat",
-    title: "Typical canarian house",
+    title:
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
@@ -218,7 +227,7 @@ const feedData: FeedItem[] = [
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
     type: "20' x 20' Garage",
     title:
-      "Bright room in the heart of the city Bright room in the heart of the city Bright room in the heart of the city",
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
@@ -233,8 +242,9 @@ const feedData: FeedItem[] = [
   {
     id: "13",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg",
-    type: "Entire Flat",
-    title: "NEW lux. apartment in the center of Santa Cruz",
+    type: "20' x 20' Garage",
+    title:
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
@@ -249,8 +259,9 @@ const feedData: FeedItem[] = [
   {
     id: "14",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg",
-    type: "Private Property",
-    title: "Green House Santa Cruz",
+    type: "20' x 20' Garage",
+    title:
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
@@ -265,8 +276,9 @@ const feedData: FeedItem[] = [
   {
     id: "15",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg",
-    type: "Entire Flat",
-    title: "Typical canarian house",
+    type: "20' x 20' Garage",
+    title:
+      "Great concrete space to store your vehicle! Protected from the sun by at least 50%. ",
     distance: 2,
     price: 3,
     carType: "Courier+",
