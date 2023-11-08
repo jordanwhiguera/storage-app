@@ -10,6 +10,7 @@ import PostImage from "./screens/PostScreen/PostImage/page";
 import PostInfo from "./screens/PostScreen/PostInfo/page";
 import PostFeatures from "./screens/PostScreen/PostFeatures/page";
 import PostQuick from "./screens/PostScreen/PostQuick/page";
+import PostReserve from "./screens/PostScreen/PostReserve/page";
 
 export default function Base() {
   return (
@@ -22,13 +23,14 @@ export default function Base() {
       {/* <Navbar /> */}
       {/* <TabSlider /> */}
       {/* <SearchResults /> */}
-      {/* <SearchButton /> */}
+      <SearchButton />
       {/* <LocationSearch /> */}
       {/* <PostScreen /> */}
-      <PostImage />
-      <PostInfo />
-      <PostFeatures />
+      {/* <PostImage /> */}
+      {/* <PostInfo /> */}
+      {/* <PostFeatures /> */}
       {/* <PostQuick /> */}
+      <PostReserve />
     </>
   );
 }
