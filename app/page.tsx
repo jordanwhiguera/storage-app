@@ -8,6 +8,8 @@ import LocationSearch from "./components/SearchButton/LocationSearch/page";
 import PostScreen from "./screens/PostScreen/page";
 import PostImage from "./screens/PostScreen/PostImage/page";
 import PostInfo from "./screens/PostScreen/PostInfo/page";
+import PostFeatures from "./screens/PostScreen/PostFeatures/page";
+import PostQuick from "./screens/PostScreen/PostQuick/page";
 
 export default function Base() {
   return (
@@ -24,7 +26,9 @@ export default function Base() {
       {/* <LocationSearch /> */}
       {/* <PostScreen /> */}
       <PostImage />
-      {/* <PostInfo /> */}
+      <PostInfo />
+      <PostFeatures />
+      {/* <PostQuick /> */}
     </>
   );
 }
