@@ -12,6 +12,8 @@ import PostFeatures from "./screens/PostScreen/PostFeatures/page";
 import PostQuick from "./screens/PostScreen/PostQuick/page";
 import PostReserve from "./screens/PostScreen/PostReserve/page";
 
+import CalendarButtonTest from "./components/SearchButton/CalendarButtonTest/page";
+
 export default function Base() {
   return (
     <>
@@ -23,14 +25,16 @@ export default function Base() {
       {/* <Navbar /> */}
       {/* <TabSlider /> */}
       {/* <SearchResults /> */}
-      <SearchButton />
+      {/* <SearchButton /> */}
       {/* <LocationSearch /> */}
       {/* <PostScreen /> */}
       {/* <PostImage /> */}
       {/* <PostInfo /> */}
       {/* <PostFeatures /> */}
       {/* <PostQuick /> */}
-      <PostReserve />
+      {/* <PostReserve /> */}
+
+      <CalendarButtonTest />
     </>
   );
 }
