@@ -26,15 +26,15 @@ export default function Base() {
       {/* <TabSlider /> */}
       {/* <SearchResults /> */}
       {/* <SearchButton /> */}
-      {/* <LocationSearch /> */}
+      <LocationSearch />
       {/* <PostScreen /> */}
       {/* <PostImage /> */}
       {/* <PostInfo /> */}
       {/* <PostFeatures /> */}
       {/* <PostQuick /> */}
-      {/* <PostReserve /> */}
+      <PostReserve />
 
-      <CalendarButtonTest />
+      {/* <CalendarButtonTest /> */}
     </>
   );
 }
