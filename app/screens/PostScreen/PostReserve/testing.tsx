@@ -1,9 +1,8 @@
-"use client";
 import React, { useState, useRef, useEffect } from "react";
-import { UseCalendar } from "@/app/components/SearchButton/UseCalendar/page";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import GooglePlacesAutocomplete from "react-google-places-autocomplete";
+import { UseCalendar } from "@/app/components/SearchButton/UseCalendar/page"; // Make sure this import path is correct
 
 type EventHandler = (event: MouseEvent | TouchEvent) => void;
 
@@ -45,21 +44,27 @@ const PostReserve: React.FC = () => {
   const [deliveryOption, setDeliveryOption] = useState("no-delivery");
   const [showDropdown, setShowDropdown] = useState(false);
   const [address, setAddress] = useState("");
-  const [isCustomDropdownOpen, setIsCustomDropdownOpen] = useState(false);
 
-  useOnClickOutside(dropdownRef, () => {
-    setShowDropdown(false);
-    setIsCustomDropdownOpen(false);
-  });
+  useOnClickOutside(dropdownRef, () => setShowDropdown(false));
 
-  const handleDeliveryOptionChange = (value: string) => {
+  const handleDeliveryOptionChange = (
+    e: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    const value = e.target.value;
     setDeliveryOption(value);
+
     if (value === "no-delivery") {
       setAddress("");
+      setShowDropdown(false);
     } else if (value === "Enter address") {
-      // Open Google Places Autocomplete or your address input method here
+      setShowDropdown(true);
     }
-    setIsCustomDropdownOpen(false);
+  };
+
+  const handleSelectAddress = (addressObject: any) => {
+    const address = addressObject.label;
+    setAddress(address);
+    setShowDropdown(false);
   };
 
   return (
@@ -106,24 +111,54 @@ const PostReserve: React.FC = () => {
         <div className="relative">
           <button
             className="border-2 bg-white text-black text-lg py-2 px-4 rounded truncate w-full h-12"
-            onClick={() => setIsCustomDropdownOpen(!isCustomDropdownOpen)}
+            onClick={() => setShowDropdown(!showDropdown)}
           >
             {address || "No home delivery or pickup"}
           </button>
-          {isCustomDropdownOpen && (
-            <div className="absolute w-full z-50 left-0 mt-1 bg-white border-2 border-gray-300 rounded">
-              <div
-                className="text-black text-lg py-2 px-4 border-b-2 hover:bg-gray-100 cursor-pointer"
-                onClick={() => handleDeliveryOptionChange("no-delivery")}
+          {showDropdown && (
+            <div className="absolute w-full z-50 left-0 mt-1 bg-white">
+              <select
+                value={deliveryOption}
+                onChange={handleDeliveryOptionChange}
+                className="w-full border-2 text-black text-lg rounded py-2 px-4 leading-tight focus:outline-none focus:border-gray-500 bg-white overflow-hidden"
+                size={2}
+                style={{
+                  backgroundColor: "white",
+                  borderColor: "#e5e7eb",
+                  // Here we attempt to remove the gray box by resetting browser defaults
+                  appearance: "none",
+                  WebkitAppearance: "none",
+                  MozAppearance: "none",
+                }}
               >
-                No home delivery or pickup
-              </div>
-              <div
-                className=" text-black text-lg py-2 px-4 hover:bg-gray-100 cursor-pointer"
-                onClick={() => handleDeliveryOptionChange("Enter address")}
-              >
-                Enter address
-              </div>
+                <option value="no-delivery">No home delivery or pickup</option>
+                <option value="Enter address">Enter address</option>
+              </select>
+              {deliveryOption === "Enter address" && (
+                <GooglePlacesAutocomplete
+                  apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
+                  selectProps={{
+                    onChange: handleSelectAddress,
+                    styles: {
+                      input: (provided) => ({
+                        ...provided,
+                        color: "black",
+                      }),
+                      option: (provided, state) => ({
+                        ...provided,
+                        backgroundColor: state.isFocused ? "#f3f3f3" : "white",
+                        color: "black",
+                      }),
+                      control: (provided, state) => ({
+                        ...provided,
+                        boxShadow: "none",
+                        borderColor: state.isFocused ? "#e5e7eb" : "#e5e7eb",
+                      }),
+                    },
+                    autoFocus: true,
+                  }}
+                />
+              )}
             </div>
           )}
         </div>
