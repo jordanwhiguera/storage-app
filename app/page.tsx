@@ -28,13 +28,13 @@ export default function Base() {
       {/* <SearchResults /> */}
       {/* <SearchButton /> */}
       {/* <LocationSearch /> */}
-      {/* <PostScreen /> */}
+      <PostScreen />
       {/* <PostImage /> */}
       {/* <PostInfo /> */}
       {/* <PostFeatures /> */}
       {/* <PostQuick /> */}
       {/* <PostHost /> */}
-      <PostReserve />
+      {/* <PostReserve /> */}
 
       {/* <CalendarButtonTest /> */}
     </>
