@@ -2,7 +2,7 @@ import React from "react";
 
 const PostFeatures = () => {
   return (
-    <div className="max-w-md mx-auto">
+    <div className="max-w-auto mx-auto border-b pt-6">
       <h2 className="text-2xl font-semibold mb-4">What this place offers</h2>
       <div className="flex flex-wrap -mx-2">
         {/* You can create an array and map through it for a cleaner component */}
@@ -57,7 +57,7 @@ const PostFeatures = () => {
         </div>
         {/* ... other amenities ... */}
       </div>
-      <button className="mt-4 px-6 py-2 border border-transparent text-base rounded-md text-white bg-black">
+      <button className="mt-4 px-6 py-2 border border-transparent text-base rounded-md text-white bg-black mb-6">
         Show all 28 amenities
       </button>
     </div>

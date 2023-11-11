@@ -13,6 +13,7 @@ import PostQuick from "./screens/PostScreen/PostQuick/page";
 import PostReserve from "./screens/PostScreen/PostReserve/page";
 
 import CalendarButtonTest from "./components/SearchButton/CalendarButtonTest/page";
+import PostHost from "./screens/PostScreen/PostHost/page";
 
 export default function Base() {
   return (
@@ -26,13 +27,14 @@ export default function Base() {
       {/* <TabSlider /> */}
       {/* <SearchResults /> */}
       {/* <SearchButton /> */}
-      <LocationSearch />
+      {/* <LocationSearch /> */}
       {/* <PostScreen /> */}
-      {/* <PostImage /> */}
-      {/* <PostInfo /> */}
+      <PostImage />
+      <PostInfo />
       {/* <PostFeatures /> */}
       {/* <PostQuick /> */}
-      <PostReserve />
+      {/* <PostHost /> */}
+      {/* <PostReserve /> */}
 
       {/* <CalendarButtonTest /> */}
     </>

@@ -2,9 +2,8 @@ import React from "react";
 
 const PostQuick = () => {
   return (
-    <div className="max-w-md mx-auto">
-      <h2 className="text-2xl font-semibold mb-4">What this place offers</h2>
-      <div className="flex flex-wrap -mx-2">
+    <div className="max-w-auto mx-auto border-b pb-4">
+      <div className="flex flex-wrap -mx-2 pt-8">
         {/* You can create an array and map through it for a cleaner component */}
         <div className="px-2 w-1/2">
           <div className="flex items-center mb-4">
