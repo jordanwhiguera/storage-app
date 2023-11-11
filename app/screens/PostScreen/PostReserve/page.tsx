@@ -121,6 +121,7 @@ const PostReserve = () => {
                 onClick={() => handleSelect}
               >
                 <GooglePlacesAutocomplete
+                  apiKey={process.env.NEXT_PUBLIC_API_KEY}
                   selectProps={{
                     isClearable: true,
                     onChange: handleSelect,
