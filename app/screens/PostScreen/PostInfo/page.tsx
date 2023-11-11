@@ -1,6 +1,7 @@
 import React from "react";
 import PostQuick from "../PostQuick/page";
 import PostFeatures from "../PostFeatures/page";
+import PostMap from "../PostMap/page";
 
 const PostInfo = () => {
   return (
@@ -40,6 +41,7 @@ const PostInfo = () => {
         </button>
       </div>
       <PostFeatures />
+      <PostMap />
     </div>
   );
 };
