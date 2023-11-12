@@ -43,8 +43,8 @@ export default function Base() {
       {/* <CalendarButtonTest /> */}
       {/* <PostMap /> */}
       {/* <PostReview /> */}
-      {/* <PayScreen /> */}
-      <PayCard />
+      <PayScreen />
+      {/* <PayCard /> */}
     </>
   );
 }

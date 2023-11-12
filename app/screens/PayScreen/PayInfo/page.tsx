@@ -2,7 +2,7 @@ import React from "react";
 
 const PayInfo = () => {
   return (
-    <div className="flex flex-col p-4">
+    <div className="flex flex-col p-4 w-full">
       <div className="text-2xl font-semibold mb-4">Confirm and pay</div>
 
       <div className="mb-8 border-b pb-8">

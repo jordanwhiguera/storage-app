@@ -6,8 +6,8 @@ const PayCard = () => {
     feedData[0]?.image ||
     "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg"; // Fallback to the provided URL if feedData[0]?.image is undefined
   return (
-    <div className="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden">
-      <div className="flex justify-between items-center pl-4 pt-4">
+    <div className="w-80 mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+      <div className="flex justify-between items-center px-4 pt-4">
         <div className="flex">
           <img
             className="w-20 h-20 object-cover rounded-lg"
