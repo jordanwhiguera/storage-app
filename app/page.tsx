@@ -15,6 +15,7 @@ import PostReserve from "./screens/PostScreen/PostReserve/page";
 import CalendarButtonTest from "./components/SearchButton/CalendarButtonTest/page";
 import PostHost from "./screens/PostScreen/PostHost/page";
 import PostMap from "./screens/PostScreen/PostMap/page";
+import PostReview from "./screens/PostScreen/PostReview/page";
 
 export default function Base() {
   return (
@@ -39,6 +40,7 @@ export default function Base() {
 
       {/* <CalendarButtonTest /> */}
       {/* <PostMap /> */}
+      {/* <PostReview /> */}
     </>
   );
 }
