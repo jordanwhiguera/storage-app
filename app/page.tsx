@@ -16,6 +16,8 @@ import CalendarButtonTest from "./components/SearchButton/CalendarButtonTest/pag
 import PostHost from "./screens/PostScreen/PostHost/page";
 import PostMap from "./screens/PostScreen/PostMap/page";
 import PostReview from "./screens/PostScreen/PostReview/page";
+import PayScreen from "./screens/PayScreen/page";
+import PayCard from "./screens/PayScreen/PayCard/page";
 
 export default function Base() {
   return (
@@ -30,7 +32,7 @@ export default function Base() {
       {/* <SearchResults /> */}
       {/* <SearchButton /> */}
       {/* <LocationSearch /> */}
-      <PostScreen />
+      {/* <PostScreen /> */}
       {/* <PostImage /> */}
       {/* <PostInfo /> */}
       {/* <PostFeatures /> */}
@@ -41,6 +43,8 @@ export default function Base() {
       {/* <CalendarButtonTest /> */}
       {/* <PostMap /> */}
       {/* <PostReview /> */}
+      {/* <PayScreen /> */}
+      <PayCard />
     </>
   );
 }
