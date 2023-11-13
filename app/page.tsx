@@ -18,7 +18,9 @@ import PostMap from "./screens/PostScreen/PostMap/page";
 import PostReview from "./screens/PostScreen/PostReview/page";
 import PayScreen from "./screens/PayScreen/page";
 import PayCard from "./screens/PayScreen/PayCard/page";
-
+import ConfirmScreen from "./screens/ConfirmScreen/page";
+import ConfirmSum from "./screens/ConfirmScreen/ConfirmSum/page";
+import ConfirmDetail from "./screens/ConfirmScreen/ConfirmDetail/page";
 export default function Base() {
   return (
     <>
@@ -43,8 +45,11 @@ export default function Base() {
       {/* <CalendarButtonTest /> */}
       {/* <PostMap /> */}
       {/* <PostReview /> */}
-      <PayScreen />
+      {/* <PayScreen /> */}
       {/* <PayCard /> */}
+      <ConfirmScreen />
+      {/* <ConfirmSum /> */}
+      {/* <ConfirmDetail /> */}
     </>
   );
 }
