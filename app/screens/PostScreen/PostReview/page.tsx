@@ -3,7 +3,7 @@ import React from "react";
 
 const PostReview = () => {
   return (
-    <div className="max-w-2xl mx-auto py-6 border-b">
+    <div className="max-w-2xl mx-auto py-6">
       <div className="flex items-center space-x-3">
         <div className="avatar placeholder mr-2">
           <div className="bg-neutral-focus text-neutral-content rounded-full w-12">

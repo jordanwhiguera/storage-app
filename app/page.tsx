@@ -21,6 +21,11 @@ import PayCard from "./screens/PayScreen/PayCard/page";
 import ConfirmScreen from "./screens/ConfirmScreen/page";
 import ConfirmSum from "./screens/ConfirmScreen/ConfirmSum/page";
 import ConfirmDetail from "./screens/ConfirmScreen/ConfirmDetail/page";
+import ProfileSum from "./screens/ProfileScreen/ProfileSum/page";
+import ProfileAbout from "./screens/ProfileScreen/ProfileAbout/page";
+import ProfileListing from "./screens/ProfileScreen/ProfileListing/page";
+import ProfileGuestReview from "./screens/ProfileScreen/ProfileGuestReview/page";
+import ProfileScreen from "./screens/ProfileScreen/page";
 export default function Base() {
   return (
     <>
@@ -47,9 +52,14 @@ export default function Base() {
       {/* <PostReview /> */}
       {/* <PayScreen /> */}
       {/* <PayCard /> */}
-      <ConfirmScreen />
+      {/* <ConfirmScreen /> */}
       {/* <ConfirmSum /> */}
       {/* <ConfirmDetail /> */}
+      {/* <ProfileSum /> */}
+      {/* <ProfileAbout /> */}
+      {/* <ProfileListing /> */}
+      {/* <ProfileGuestReview /> */}
+      <ProfileScreen />
     </>
   );
 }
