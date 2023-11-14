@@ -27,6 +27,8 @@ import ProfileListing from "./screens/ProfileScreen/ProfileListing/page";
 import ProfileGuestReview from "./screens/ProfileScreen/ProfileGuestReview/page";
 import ProfileScreen from "./screens/ProfileScreen/page";
 import BookingScreen from "./screens/BookingScreen/page";
+import HostScreen from "./screens/HostScreen/page";
+import NavbarTwo from "./components/NavbarTwo/page";
 export default function Base() {
   return (
     <>
@@ -61,7 +63,9 @@ export default function Base() {
       {/* <ProfileListing /> */}
       {/* <ProfileGuestReview /> */}
       {/* <ProfileScreen /> */}
-      <BookingScreen />
+      {/* <BookingScreen /> */}
+      {/* <HostScreen /> */}
+      <NavbarTwo />
     </>
   );
 }
