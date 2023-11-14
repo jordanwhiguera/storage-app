@@ -26,6 +26,7 @@ import ProfileAbout from "./screens/ProfileScreen/ProfileAbout/page";
 import ProfileListing from "./screens/ProfileScreen/ProfileListing/page";
 import ProfileGuestReview from "./screens/ProfileScreen/ProfileGuestReview/page";
 import ProfileScreen from "./screens/ProfileScreen/page";
+import BookingScreen from "./screens/BookingScreen/page";
 export default function Base() {
   return (
     <>
@@ -59,7 +60,8 @@ export default function Base() {
       {/* <ProfileAbout /> */}
       {/* <ProfileListing /> */}
       {/* <ProfileGuestReview /> */}
-      <ProfileScreen />
+      {/* <ProfileScreen /> */}
+      <BookingScreen />
     </>
   );
 }
