@@ -64,8 +64,8 @@ export default function Base() {
       {/* <ProfileGuestReview /> */}
       {/* <ProfileScreen /> */}
       {/* <BookingScreen /> */}
-      {/* <HostScreen /> */}
-      <NavbarTwo />
+      <HostScreen />
+      {/* <NavbarTwo /> */}
     </>
   );
 }
