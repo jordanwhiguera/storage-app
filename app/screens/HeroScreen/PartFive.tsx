@@ -15,10 +15,6 @@ const PartFive = () => {
             Store your vehicle in someone's driveway or backyard for as long or
             as little as you need.
           </p>
-
-          <button className="bg-black text-white px-6 py-2 rounded-md">
-            See prices
-          </button>
         </div>
         {/* Image Content */}
         <div className="flex-1 py-10 ">

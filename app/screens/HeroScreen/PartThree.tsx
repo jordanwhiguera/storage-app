@@ -16,10 +16,6 @@ const PartThree = () => {
             affordable and transparent price. You can rent a space for as little
             as a day or as long as you need.
           </p>
-
-          <button className="bg-black text-white px-6 py-2 rounded-md">
-            See prices
-          </button>
         </div>
         {/* Image Content */}
         <div className="flex-1 py-10 ">

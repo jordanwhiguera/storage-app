@@ -6,7 +6,7 @@ const NavbarTwo = () => {
       <div className="navbar-start">
         <a className="btn btn-ghost text-xl">stowbase</a>
       </div>
-      <div className="navbar-center">
+      {/* <div className="navbar-center">
         <div className="flex items-stretch border rounded-lg">
           <a className="btn btn-ghost btn-sm rounded-btn">Location</a>
           <a className="btn btn-ghost btn-sm rounded-btn">
@@ -14,7 +14,7 @@ const NavbarTwo = () => {
           </a>
           <a className="btn btn-ghost btn-sm rounded-btn">Contact</a>
         </div>
-      </div>
+      </div> */}
 
       <div className="navbar-end">
         <div className="dropdown dropdown-end">

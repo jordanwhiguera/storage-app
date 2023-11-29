@@ -23,10 +23,6 @@ const PartFour = () => {
             Parking at the airport can be expensive. Instead, park your car at a
             local's house for a fraction of the price.
           </p>
-
-          <button className="bg-black text-white px-6 py-2 rounded-md">
-            See prices
-          </button>
         </div>
       </div>
     </div>

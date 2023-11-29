@@ -23,10 +23,6 @@ const PartTwo = () => {
             Request a pickup, and have your things stored for you. When you need
             them back, you can request to have some or all of your items back.
           </p>
-
-          <button className="bg-black text-white px-6 py-2 rounded-md">
-            See prices
-          </button>
         </div>
       </div>
     </div>
