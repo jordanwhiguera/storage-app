@@ -21,8 +21,11 @@ const PartTwo = () => {
           </h1>
           <p className="text-lg mb-8 text-black">
             Request a pickup, and have your things stored for you. When you need
-            them back, you can request to have some or all of your items back.
+            them back, request to have some or all of your items back.
           </p>
+          <button className="bg-black text-white px-4 py-4 rounded-md w-40">
+            Find storage
+          </button>
         </div>
       </div>
     </div>

@@ -9,10 +9,10 @@ const PartOne = () => {
         {/* Text Content */}
         <div className="flex-1 p-12 flex flex-col justify-center">
           <h1 className="text-5xl font-bold mb-6 text-white">
-            Making storing your stuff easy
+            Make storing your stuff easy
           </h1>
           <p className="text-lg mb-8 text-white">
-            Request a pickup, and have your things stored for you
+            Request a pickup, and have your things stored for you.
           </p>
           <div className="space-y-4 mb-8">
             <div className="flex justify-between">
